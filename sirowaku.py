@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 white = cv2.imread("white.png")
-img = cv2.imread("moto.png")
+img = cv2.imread("gt.png")
 
 height = img.shape[0]
 width = img.shape[1]
@@ -40,4 +40,4 @@ white[0:space, width+space:width+(space*2)] = up_right[0:space, 0:space]
 white[height+space:height+(space*2), 0:space] = down_left[0:space, 0:space]
 white[height+space:height+(space*2), width+space:width+(space*2)] = down_right[0:space, 0:space]
 
-cv2.imwrite("wakutuki.png", white)
+cv2.imwrite("wakutuki2.png", white)
